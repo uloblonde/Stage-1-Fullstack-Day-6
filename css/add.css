@@ -8,18 +8,23 @@ body{
     background-color: rgb(191, 206, 219);
 }
 .kontener{
-    padding-left:5rem;
-    padding-right:5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
-#kontenerbo{
-    background-color: white;
-    color: white;
+.kontener1{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    background-color: white; 
+}
+.kontener-gambar{
+    margin-bottom: 10px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 0;
     background-color: white;
+    align-items: center;
 }
 .home-link{
     display: flex;
@@ -32,7 +37,7 @@ body{
     margin-top: 10px;
 }
 .navbar img{
-    width: 70px;
+    width: 60px;
 }
 
 .home-link a{
@@ -41,12 +46,14 @@ body{
     margin-right: 50px;
 }
 .contact-link{
-    padding: 10px 20px;
+    padding: 7px 15px;
+    border-radius: 15px;
     background-color: black;
-    border-radius: 25px;
     margin-left: 4rem;
+    position: relative;
 }
 .contact-link a{
+    font-size: 9pt;
     color: white;
     text-decoration: none;
 }
@@ -83,6 +90,12 @@ form{
     border: 1px solid rgb(196, 196, 196);
     border-radius: 5px;
     box-shadow: -12px -2px 165px -29px rgba(0,0,0,0.57);
+}
+.start-date{
+    width: 50%;
+}
+.end-date{
+    width: 50%;
 }
 #projectn{
     width: 98%;
@@ -259,13 +272,19 @@ textarea{
 .hamburger-muncul{
     display: none;
 }
-.ngilang{
+.hilang{
     display: none;
 }
 
 
-@media screen and (max-width: 800px){
 
+@media screen and (max-width: 995px){
+    .ngilang{
+        display: none;
+    }
+    .contact-link{
+        display: none;
+    }
     #bars{
         display: block;
     }
@@ -323,25 +342,44 @@ textarea{
         padding: 0;
     }
     .sedate input{
-        width: 89%;
+        width: 96%;
     }
+    
+
+}
+@media screen and (max-width: 900px){
     .kontener-blog{
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
     .card-post{
-        width: 60%;
+        width: 30%;
     }
-
-
-
+    
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 800px){
+    .card-post{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .card-post{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px){
     .kontener1{
         width: 100%;
     }
     .sedate input{
-        width: 73%;
+        width: 95%;
+    }
+    .card-post{
+        width: 50%;
+    }
+    .hamburger{
+        margin-right: 50px;
     }
 }

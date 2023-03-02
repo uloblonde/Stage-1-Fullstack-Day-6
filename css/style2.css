@@ -45,7 +45,6 @@ body{
     margin-right: 50px;
 }
 .contact-link{
-    display: none;
     padding: 7px 15px;
     border-radius: 15px;
     background-color: black;
@@ -137,11 +136,17 @@ body{
 .hamburger-muncul{
     display: none;
 }
+.hilang{
+    display: none;
+}
 
 
+@media screen and (max-width: 995px){
 
-@media screen and (max-width: 800px){
-
+    .contact-link{
+        display: none;
+    }
+    
     #bars{
         display: block;
     }
